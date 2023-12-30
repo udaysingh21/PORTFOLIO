@@ -1,0 +1,87 @@
+{% extends 'website/base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    .home h1 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 45px;
+        color: black;
+
+    }
+
+    .intro h1{
+        text-align: center;
+        font-family: 'Roboto Serif', sans-serif;
+        font-size: 65px;
+        color: black;
+    }
+
+    .intro p{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        color: black;
+
+    }
+
+     video {
+        position: fixed; /* Change from absolute to fixed */
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+
+    /* Additional style to remove margin and padding from body and HTML */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+</style>
+
+<!--<video autoplay muted loop>-->
+<!--    <source src="{% static 'media/home.mp4' %}" type="video/mp4">-->
+<!--</video>-->
+
+<div class="home container mt-2">
+    <h1>The most dangerous phrase in the language is,<br> 'We've always done it this way</h1>
+    <div style="margin-left: 600px;"><h1>-Grace Hopper</h1></div>
+</div>
+
+<div class="intro container">
+    <h1 id="greeting" style="margin-top: 80px;">Hi,</h1>
+    <h1 style="margin-top: 20px;">I'm Uday Vikram Singh</h1>
+    <p style="margin-top: 30px;">Aspiring Software Engineer, Engineering Future Solutions</p>
+
+    <a href="{% url 'about' %}" style="text-decoration: none;">
+        <center>
+            <button class="btn btn-outline rounded-circle" type="button" style="margin-top: 100px; border-color:black; color: black;">></button>
+        </center>
+    </a>
+
+</div>
+
+
+<script>
+    console.log("Hello World");
+    const greetings=["नमस्ते","hello", "hola", "bonjour", "hallo", "ciao", "olá", "привет",  "你好", "안녕하세요", "こんにちは", "merhaba", "سلام", "xin chào", "hujambo", "salut", "salam", "прывітанне", "γειά σου", "hyvää päivää", "שלום", "hej", "سہيلان"];
+    const greeting=document.getElementById('greeting');
+
+    function changeGreeting(){
+        greeting.innerHTML=greetings[Math.floor(Math.random()*greetings.length)];
+    }
+
+    <!-- 1000ms = 1s-->
+    setInterval(changeGreeting,1500);
+
+</script>
+
+{% endblock content %}
