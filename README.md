@@ -8,5 +8,8 @@ Portfolio is project name.
 website is application name.
 
 
-https://github.com/udaysingh21/PORTFOLIO/assets/93074761/2640249c-0139-4c97-9d84-d51b3870705b
+
+
+https://github.com/udaysingh21/PORTFOLIO/assets/93074761/6acaf463-f936-46b7-8f1e-02d168db59e7
+
 
