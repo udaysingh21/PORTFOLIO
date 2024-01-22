@@ -1,0 +1,119 @@
+{% extends 'website/base.html' %}
+{% block content %}
+{% load static %}
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 0 15px;
+    }
+
+    .grid-item {
+      padding: 20px;
+    }
+
+    .round{
+      border-radius: 20px;
+      box-shadow: 0 0 3px 3px grey;
+      border: 3px solid grey;
+    }
+    p
+    {
+      font-size: 17px;
+      color: dark black;
+    }
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1; /* Send the video to the background */
+    }
+
+</style>
+
+
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="container mt-3">
+      <div class="mt-4 p-5 bg text-black round">
+        <table class="experience-table">
+            <tr>
+                <td class="data"><center><img src="{% static 'media/logo_digi.png' %}" alt="digipodium_logo" height="65" width="65"></center></td>
+            </tr>
+
+            <tr>
+                <td class="data">
+                    <h3 style="color:black; text-align:center;">Digipodium</h3>
+                    <h6 style="color:black; text-align:center;">Lucknow, Uttar Pradesh, India, On-site</h6>
+
+                    <h3 style="color:black;">Associate Faculty</h3>
+                    <h6 style="color:black;">August 2023 - Present</h6>
+
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22"> Instructing Data
+                    Structures and Algorithms (DSA) with proficiency
+                    in Python programming language.</p>
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22"> Conducting on-site
+                        classes, ensuring thorough understanding of concepts.</p>
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22"> Received positive
+                        feedback for clear instructions from students.</p>
+                    <p><img src="{% static 'media/icons8-skills-50.png' %}" alt="" height="25" width="25"> Data Structures,
+                        Algorithms, Python (Programming Language)
+
+                    <h3 style="color:black;">Python Intern</h3>
+                    <h6 style="color:black;">June 2023 - August 2023</h6>
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22">
+                        Elevated programming skills and expanded expertise in the field by delivering Python lectures to enhance participant's knowledge.
+                    </p>
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22">
+                         Proficiently delivered exceptional outputs within challenging time constraints by successfully completing modular works.
+                    </p>
+
+                    <p><img src="{% static 'media/icons8-skills-50.png' %}" alt="" height="25" width="25"> Python (Programming Language),
+                    Data Analytics, Streamlit, Data Visualisation</p>
+
+                </td>
+            </tr>
+        </table>
+      </div>
+</div>
+</div>
+
+<div class="grid-item">
+    <div class="container mt-3">
+      <div class="mt-4 p-5 bg text-black round">
+        <table class="experience-table">
+            <tr>
+                <td><center><img src="{% static 'media/amazon_logo.jpeg' %}" alt="amazon_logo" height="65" width="65"></center></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 style="color:black; text-align:center;">Amazon</h3>
+                    <h3 style="color:black;">ML Summer School Mentee</h3>
+                    <h6 style="color:black;">September 2023 - October 2023, Remote</h6>
+
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22">Acquired foundational knowledge in various
+                        machine learning concepts including supervised and unsupervised learning, deep neural networks, dimensionality reduction,
+                        probabilistic graphical models, sequential learning, causal inference, and reinforcement learning.</p>
+                    <p><img src="{% static 'media/icons8-details-7.png' %}" alt="" height="22" width="22">Applied techniques to simplify complex data,
+                        improving model performance across various applications.</p>
+
+                    <p><img src="{% static 'media/icons8-skills-50.png' %}" alt="" height="25" width="25"> Machine Learning, Deep Learning</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock content %}
