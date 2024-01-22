@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "PORTFOLIO/wsgi.py",
+      "src": "Portfolio/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/PORTFOLIO/wsgi.py"
+      "dest": "/Portfolio/wsgi.py"
     }
   ]
 }
